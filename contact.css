@@ -126,6 +126,7 @@
     font-size: 1.1rem;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.354);
+    resize: vertical;
 }
 .article-1>.container>form>.my-btn{
     margin: 20px 0 0;
