@@ -136,6 +136,27 @@
     height: 100%;
     overflow: hidden;
     border-radius: 80px;
+    position: relative;
+}
+.article-1>.container>.image::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.381);
+}
+.article-1>.container>.image>p{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 3rem;
+    font-family: 'Playfair Display';
+    font-weight: 800;
+    font-style: italic;
 }
 .article-1>.container>.image>img{
     width: 100%;
