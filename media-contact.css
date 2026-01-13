@@ -1,0 +1,140 @@
+@media (max-width:1024px){
+    .header_div>.hero-content>div>.line{
+        padding: 7px 15px;
+        font-size: 1rem;
+    }
+    .header_div>.hero-content>div>h2{
+        font-size: 3rem ;
+    }
+    .article-2{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+@media (max-width:750px) {
+    .my-btn{
+        font-size: 0.8rem;
+        padding: 12px 20px;
+    }
+    .header_div>header{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .header_div>header>a{
+        order: 0;
+        text-align: center;
+    }
+    .header_div>header>a>img{
+        width: 70%;
+    }
+    .header_div>header>div{
+        order: 2;
+        grid-column: span 2;
+    }
+    .header_div>.hero-content>div>h2{
+        font-size: 2rem ;
+    }
+    .article-1>.container>.image{
+        display: none;
+    }
+    .article-1{
+        height: 110vh;
+    }
+
+
+
+    .article-3{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        position:relative;
+        height:180vh;
+    }
+    .article-3>.img{
+        transform: scale(0.8) !important;
+        bottom: -40px;
+    }
+    .footer footer{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+}
+@media (max-width:650px) {
+    .article-3{
+        overflow: hidden;
+    }
+    .article-3>img[alt^="flight"]{
+        transform:translate(-50%,-50%) rotate(-35deg) scale(1);
+    }
+    .article-2{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+@media (max-width:450px) {
+
+    .footer footer{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer footer > div{
+        align-items: center;
+    }
+}
+@media (max-width:400px) {
+    .header_div{
+        padding-bottom: 50px;
+    }
+    .header_div>header{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .header_div>header>div{
+        display: none;
+    }
+    .header_div>header>a>img{
+        width: 90%;
+    }
+    .header_div>header>.my-btn{
+        display: none;
+    }
+    .header_div>header>.menu-btn{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .header_div>header>.menu-btn>span{
+        cursor: pointer;
+        background-color: tomato;
+        padding: 10px 10px;
+        border-radius: 5px;
+    }
+}
+
+
+/* Heights BreakPoints *
+@media (min-height:300px) {
+    .article-1{
+        grid-template-rows: repeat(4,180vh);
+    }
+}
+@media (min-height:360px) {
+    .article-1{
+        grid-template-rows: repeat(4,150vh);
+    }
+}
+@media (min-height:410px) {
+    .article-1{
+        grid-template-rows: repeat(4,130vh);
+    }
+}
+@media (min-height:550px) {
+    .article-1{
+        grid-template-rows: repeat(4,100vh);
+    }
+}
+@media (min-height:650px) {
+    .article-1{
+        grid-template-rows: repeat(4,80vh);
+    }
+}
+

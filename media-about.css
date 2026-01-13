@@ -6,6 +6,22 @@
     .header_div>.hero-content>div>h2{
         font-size: 3rem ;
     }
+    .article-2{
+        gap: 30px;
+        padding: 50px 30px;
+    }
+    .article-2>div{
+        width: 40%;
+    }
+    .article-2>.images{
+        width: 60%;
+    }
+    .article-2>.content>.title{
+        font-size: 1rem;
+    }
+    .article-2>.content>h2{
+        font-size: 3rem;
+    }
 }
 @media (max-width:750px) {
     .my-btn{
@@ -59,14 +75,52 @@
         font-size: 0.9rem;
     }
 
+    .article-2{
+        gap: 30px;
+        padding: 50px 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .article-2>div{
+        width: 100%;
+    }
+    .article-2>.images{
+        width: 100%;
+    }
+    .article-2>.images>img{
+        width: 100%;
+    }
 
-    .article-6{
+    .article-3>.container{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        height: 200vh;
+    }
+    .article-3>.container>:last-child{
+        grid-column: span 2;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .article-4>.container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 200%;
+    }
+    .article-4>.container>:last-child{
+        grid-column: span 2;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+
+    .article-5{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         position:relative;
         height:180vh;
     }
-    .article-6>.img{
+    .article-5>.img{
         transform: scale(0.8) !important;
         bottom: -40px;
     }
@@ -76,10 +130,10 @@
     }
 }
 @media (max-width:650px) {
-    .article-6{
+    .article-5{
         overflow: hidden;
     }
-    .article-6>img[alt^="flight"]{
+    .article-5>img[alt^="flight"]{
         transform:translate(-50%,-50%) rotate(-35deg) scale(1);
     }
 }
@@ -103,6 +157,45 @@
     }
 }
 @media (max-width:450px) {
+    .article-3>.title{
+        font-size: 1rem;
+    }
+    .article-3>h2{
+        font-size: 2rem;
+        width: 100%;
+    }
+    .article-3>.container{
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 300vh;
+        width: 100%;
+    }
+    .article-3>.container>:last-child{
+        grid-column: span 1;
+        width: 100%;
+    }
+    .article-3>.container>.child-div{
+        width: 100%;
+    }
+
+    .article-4>.title{
+        font-size: 1rem;
+    }
+    .article-4>h2{
+        font-size: 2rem;
+    }
+
+    .article-4>.container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 300%;
+    }
+    .article-4>.container>:last-child{
+        grid-column: span 1;
+        width: 100%;
+    }
+
+
     .footer footer{
         grid-template-columns: 1fr;
         text-align: center;
